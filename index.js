@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var sequelize = require('./sequelize');
 
 var executeQuery = function(){
