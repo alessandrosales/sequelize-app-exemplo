@@ -1,15 +1,9 @@
 #!/usr/bin/env node
 
-var sequelize = require('./sequelize');
+var Amigo = require('./models/Amigo');
 
-var executeQuery = function(){
-
-	sequelize.query('SELECT * FROM amigos').then(function(amigos){
-		var amigos = amigos[0];
-		for(var index in amigos){
-			console.log(amigos[index].nome);
-		}
-	});
-}
-
-executeQuery();
+Amigo.all().then(function(amigos){
+	for(var i in amigos){
+		console.log(amigos[i].nome);
+	}
+});

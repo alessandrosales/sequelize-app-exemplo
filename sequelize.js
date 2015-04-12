@@ -5,4 +5,7 @@ var sequelize = new Sequelize('', '', '', {
 	storage: 'db.sqlite'
 });
 
-module.exports = sequelize;
+module.exports = {
+	sequelizeObject: sequelize,
+	sequelizeClass: Sequelize
+}
