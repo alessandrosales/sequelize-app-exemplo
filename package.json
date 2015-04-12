@@ -1,0 +1,15 @@
+{
+  "name": "sequelize-app-exemplo",
+  "version": "1.0.0",
+  "description": "App exemplo para teste do sequelize",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alessandro Sales <contato@alessandrosales.com.br>",
+  "license": "ISC",
+  "dependencies": {
+    "sequelize": "^2.0.5",
+    "sqlite3": "^3.0.5"
+  }
+}
